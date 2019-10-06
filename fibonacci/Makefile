@@ -1,10 +1,8 @@
 .PHONY: clean
 OBJS = main.o fib.o
 CFLAGS = -Wall -g
-LDFLAGS =
-# LDFLAGS = -static
-CC = gcc
-# CC = musl-gcc
+LDFLAGS = -static
+CC = musl-gcc
 INCLUDES =
 LIBS =
 
