@@ -6,6 +6,12 @@ set (Tutorial_VERSION_MINOR 0)
 
 # should we use our own math functions
 option (USE_MYMATH "Use tutorial provided math implementation" ON)
+# should we use log and exp from system
+option (USE_EXP_LOG "Use system provided exp and log implementation" OFF)
+
+include (CheckFunctionExists)
+check_function_exists(log HAVE_LOG)
+check_function_exists(exp HAVE_EXP)
 
 # configure a header file to pass some of the CMake settings
 # to the source code
