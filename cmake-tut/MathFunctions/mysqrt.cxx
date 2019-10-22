@@ -1,5 +1,6 @@
 #include <iostream>
 #include "TutorialConfig.h"
+#include "Table.h"
 #if defined(USE_EXP_LOG) && defined(HAVE_LOG) && defined(HAVE_EXP)
 #include <math.h>
 #endif
@@ -9,11 +10,17 @@ double mysqrt(double x)
     if (x <= 0) {
         return 0;
     }
+    double result = x;
+    if (x >= 1 && x < 10) {
+        std::cout << "Using pre-computed result" << std::endl;
+        result = sqrtTable[static_cast<int>(x)];
+        return result;
+    }
+
 #if defined(USE_EXP_LOG) && defined(HAVE_LOG) && defined(HAVE_EXP)
-    double result = exp(log(x)*0.5);
+    result = exp(log(x)*0.5);
     std::cout << "Computing sqrt using exp() and log()" << std::endl;
 #else
-    double result = x;
 
     for (int i = 0; i < 10; ++i) {
         if (result <= 0) {

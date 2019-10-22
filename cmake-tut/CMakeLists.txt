@@ -46,12 +46,13 @@ macro (do_test arg result)
     PROPERTIES PASS_REGULAR_EXPRESSION ${result})
 endmacro (do_test)
 
-# does it sqrt of 25
-do_test(25 "25 is 5")
-# does it handle negative numbers
-do_test(-25, "-25 is 0")
-# does it handle small numbers
-do_test(0.0001 "0.0001 is 0.01")
-# does the usage message work?
+# do a bunch of result based tests
+do_test (4 "4 is 2")
+do_test (9 "9 is 3")
+do_test (5 "5 is 2.236")
+do_test (7 "7 is 2.645")
+do_test (25 "25 is 5")
+do_test (-25 "-25 is 0")
+do_test (0.0001 "0.0001 is 0.01")
 add_test (TutorialUsage Tutorial)
 set_tests_properties (TutorialUsage PROPERTIES PASS_REGULAR_EXPRESSION "Usage:.*number")
