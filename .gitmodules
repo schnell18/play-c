@@ -1,0 +1,6 @@
+[submodule "aes/libs/tiny-AES-c"]
+	path = aes/libs/tiny-AES-c
+	url = https://github.com/kokke/tiny-AES-c.git
+[submodule "aes/libs/b64.c"]
+	path = aes/libs/b64.c
+	url = https://github.com/littlstar/b64.c
