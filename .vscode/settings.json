@@ -1,6 +1,7 @@
 {
     "C_Cpp.default.configurationProvider": "go2sh.cmake-integration",
     "files.associations": {
-        "b64.h": "c"
+        "b64.h": "c",
+        "stdlib.h": "c"
     }
 }
