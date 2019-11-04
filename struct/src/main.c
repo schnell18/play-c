@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <string.h>
 
-struct Book {
+typedef struct Book {
     char title[50];
     char author[50];
     char subject[100];
     int book_id;
-};
+} Book;
 
-void print_book(struct Book *book);
+void print_book(Book *book);
 
 int main()
 {
 
-    struct Book book1;
-    struct Book book2;
+    Book book1;
+    Book book2;
 
     strcpy(book1.title, "C Programming");
     strcpy(book1.author, "Nuha Ali");
@@ -33,7 +33,7 @@ int main()
     return 0;
 }
 
-void print_book(struct Book *book)
+void print_book(Book *book)
 {
     printf("Book title: %s\n", book->title);
     printf("Book author: %s\n", book->author);
