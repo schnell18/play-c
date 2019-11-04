@@ -13,3 +13,4 @@ This is a collection mini C project to practise *C* programming.
 | cmake-hello        | CMake hello world                    |
 | str                | string function demo                 |
 | struct             | struct demo                          |
+| bit\_field         | bit field demo                       |
