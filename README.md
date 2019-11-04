@@ -11,3 +11,5 @@ This is a collection mini C project to practise *C* programming.
 | aes                | AES encrypt/decrypt utility          |
 | cmake-tut          | CMake tutorial                       |
 | cmake-hello        | CMake hello world                    |
+| str                | string function demo                 |
+| struct             | struct demo                          |
