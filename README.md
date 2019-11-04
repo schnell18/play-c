@@ -15,3 +15,5 @@ This is a collection mini C project to practise *C* programming.
 | struct             | struct demo                          |
 | bit\_field         | bit field demo                       |
 | preprocessor       | preprocessor demo                    |
+| recursion          | recursion demo                       |
+| var-args           | variable arguments demo              |
