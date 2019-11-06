@@ -28,4 +28,12 @@ or using `ldd` command:
     $ ldd fib
     不是动态可执行文件
 
+If you build with [cmake][2], you run cmake as follows:
+
+    mkdir build
+    cd build
+    CC="musl-gcc" cmake -DCMAKE_EXE_LINKER_FLAGS="-static -Os" ..
+    make
+
 [1]: https://www.musl-libc.org/
+[2]: https://www.cmake.org/
